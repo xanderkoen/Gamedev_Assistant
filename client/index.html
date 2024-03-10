@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamedev Assistant</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Gamedevelopment Assistant</h1>
+    <p>Hey, i'm your game development assistant, try asking me a question or describe what you want to make and see if i can help you.</p>
+    <div id="loader" class="hidden">
+        <div class="loader">
+            <div class="dot dot1"></div>
+            <div class="dot dot2"></div>
+            <div class="dot dot3"></div>
+        </div>
+    </div>
+    <div id="chatlog">
+        <div id="message-container"></div>
+    </div>
+    <div class="input-container">
+        <input type="text" id="question" placeholder="Describe what you are trying to make...">
+        <button id="submit-btn" onclick="sendMessage()">Send</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
